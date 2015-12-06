@@ -1,0 +1,31 @@
+<section id="talks">
+<div class="container">
+  <h2>Talks </h2>
+  <div class="panel panel-default">
+    <div class="panel-body">
+  		{% for talk in site.talks | sort: 'date' %}
+  				 <h3>
+             {{ talk.title }}<br>
+             <small>{{ talk.sub-title }}</small>
+            </h3>
+  			<div class="row">
+          <div class="col-xs-4">
+            {{ talk.date | date_to_string }}
+          </div>
+          <div class="col-xs-4">
+             <i class="fa fa-github"></i>
+             <a href='{{ talk.source_url }}'>Source Code</a>
+          </div>
+          <div class="col-xs-4">
+            <i class="fa fa-slideshare"></i>
+            <a href='{{ talk.presentation_url }}'>Presentation</a>
+          </div>
+        </div>
+        <div class ="row">
+           <p>{{ talk.content }}</p>
+  			</div>
+  	  {% endfor %}
+    </div>
+  </div>
+</div>
+</section>
