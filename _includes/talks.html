@@ -3,7 +3,8 @@
   <h2>Talks </h2>
   <div class="panel panel-default">
     <div class="panel-body">
-  		{% for talk in site.talks | sort: 'date' %}
+  		{% assign sorted_talks = (site.talks | sort: 'date') | reverse %}
+  		{% for talk in sorted_talks %}
   				 <h3>
              {{ talk.title }}<br>
              <small>{{ talk.sub-title }}</small>
