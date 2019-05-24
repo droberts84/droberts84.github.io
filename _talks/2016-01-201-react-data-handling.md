@@ -2,7 +2,7 @@
 title: Data Handling in React
 date: 2016-01-20 00:00:00 -0500
 sub-title: Callbacks, Flux, and Redux
-source_url: https://github.com/droberts84/react-flux-redux-talk
+source_url: https://github.com/drobtravels/react-flux-redux-talk
 presentation_url: http://www.slideshare.net/DavidRoberts38/data-handling-in-react-callbacks-flux-and-redux
 ---
 Have you tried building a simple React app, but been overwhelmed as soon as you needed to share data between components?

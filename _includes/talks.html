@@ -14,8 +14,10 @@
             {{ talk.date | date_to_string }}
           </div>
           <div class="col-xs-3">
-             <i class="fa fa-github"></i>
-             <a href='{{ talk.source_url }}'>Source Code</a>
+            {% if talk.source_url %}
+              <i class="fa fa-github"></i>
+              <a href='{{ talk.source_url }}'>Source Code</a>
+            {% endif %}
           </div>
           <div class="col-xs-3">
             <i class="fa fa-slideshare"></i>
